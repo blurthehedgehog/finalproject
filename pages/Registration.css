@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  background: url("../images/alex-diffor-c7IACkxm9KE-unsplash.jpg");
+    background-position: 50%;
+    background-size:120%; 
+   
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    padding: 20px;  
+    transform: translateY(70px);
+}
+
+
+
+
+
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+.form-title {
+   font-size: 2rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-size: 200%;  
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 20s infinite alternate linear;
+    margin-bottom:30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px;
+    border-radius: 20px;
+   border: 2px solid gray;
+   backdrop-filter: blur(10px);
+     background-color: rgba(126, 40, 255, 0.321); 
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #E5E7EB;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin: 10px;
+    background: #47617b58;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group, input::placeholder{
+    color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3B82F6;
+    transition: .5s ease;
+    background: rgba(255, 255, 255, 0.441);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.help-text {
+    font-size: 0.75rem;     
+    color: #ffffff;
+    margin-top: 6px;
+}
+
+.HaveACC {
+    margin-top: 10px;
+}
+
+.HaveACC span {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.HaveACC a {
+    color: #3B82F6;
+    text-decoration: none;
+    margin-left: 4px;
+    font-weight: 500;
+}
+
+.submit-btn {
+  
+    width: 80%;
+    background: #ad19c1;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+        transition: .5s ease;
+}
+
+option{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    border: solid white 1px;
+}
+
+.submit-btn:hover {
+    background: #111827;
+    border-radius: 20px;
+
+}
+
+.terms {
+    font-size: 0.75rem;
+    color: #6B7280;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #3B82F6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+ 
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side {
+        max-height: 300px;
+        background-size: 200px;
+        padding: 20px;
+    }
+
+    .left-side h1 {
+        font-size: 2rem;
+        margin-top: 20px;
+    
+    }
+
+    .right-side {
+        padding: 30px 20px;
+    }
+
+    .logo-img {
+        max-width: 250px;
+         transform: translateY(-25px);
+    }
+}
+
+
+form{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+}
